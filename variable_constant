@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a;
+	const int b=200;//must assign constant value
+			//ortherwise garbage value is fixed constant.
+	clrscr();
+	printf("variable a = %d",a);  // garpage value
+	printf("\n constant b =%d",b);
+	a=100;
+       //	b=200; // don't change constant value fixed
+	printf("\nvariable a=%d",a); // a=100
+	printf("\nconstant b=%d",b); // b=200
+	getch();
+}
